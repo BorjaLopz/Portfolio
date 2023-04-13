@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    --principalClaro: #2c17a0;
+    --backgroundClaro: #505cff;
+    --shadowColour: #ff9950;
+    --shadowClaro: #ff995030 0px 4px 8px;
+}
+
+header h1 
+{
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header h1 a {
+  color: black;
+}
+
+nav {
+  background-color: var(--backgroundClaro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+
+menu {
+  background-color: var(--principalClaro);
+  display: flex;
+  flex-direction: row;
+  list-style: outline none none;
+  height: 2rem;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: var(--shadowClaro)
+}
+
+li {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 25%;
+  background-color: var(--shadowColour);
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-in-out;
+} 
+
+li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+#ulTwitter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 16px 32px;
+  gap: 16px;
+  box-shadow: var(--shadowClaro);
+  justify-content: space-around;
+}
+
+.liTwitter {
+  display: inline-block;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+

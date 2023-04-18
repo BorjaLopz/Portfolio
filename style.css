@@ -26,7 +26,7 @@ header h1 a {
   color: black;
 }
 
-nav {
+header nav {
   background-color: var(--backgroundClaro);
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@ nav {
   height: 3rem;
 }
 
-menu {
+header menu {
   background-color: var(--principalClaro);
   display: flex;
   flex-direction: row;
@@ -72,7 +72,7 @@ li:hover::after {
   transform-origin: bottom center;
 }
 
-menu ul {
+header menu ul {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -92,7 +92,7 @@ menu ul {
   text-align: center;
 }
 
-a {
+header a {
   text-decoration: none;
   color: white;
 }
@@ -127,15 +127,20 @@ main > section {
   right: 20px;
   bottom: 20px;
   z-index: 99;
-  /* display: none; */
+  display: none;
   font-size: 2rem;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  border: 1px solid black;
+  border: /*1px solid black*/ none;
+  background: url(./Icons/Arrow.svg) no-repeat center;
+  background-size: contain;
 }
 
+
 #GoUpButton:hover {
-  background-color: gray;
+  background: url(./Icons/Hover.svg) no-repeat center;
+  background-size: contain;
+  /* background-color: gray; */
 }
 

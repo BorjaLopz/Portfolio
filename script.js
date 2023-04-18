@@ -12,5 +12,18 @@ btnScrollToTop.addEventListener("click", e => {
 });
 
 window.addEventListener("scroll", e => {
-    btnScrollToTop.style.display = window.scrollY > 20 ? "block" : "none"
+    let scale = 0;
+    // console.log("ScrollY:", window.scrollY)
+    if(window.scrollY > 50 && window.scrollY < 250)
+    {
+        scale = Math.round(window.scrollY * 0.2);
+        btnScrollToTop.style.display = "block";
+        btnScrollToTop.style.width = scale +"px";
+        btnScrollToTop.style.height = scale + "px";
+        // console.log("scale: ", scale);
+    } else if(window.scrollY < 50)
+    {
+        btnScrollToTop.style.display = "none";
+    }
+    // btnScrollToTop.style.display = window.scrollY > 50 ? "block" : "none";
 });

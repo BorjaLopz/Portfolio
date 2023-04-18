@@ -6,10 +6,14 @@
 
 html {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande","Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    
+  scroll-behavior: smooth;
+
     --principalClaro: #2c17a0;
     --backgroundClaro: #505cff;
     --shadowColour: #ff9950;
     --shadowClaro: #ff995030 0px 4px 8px;
+
 }
 
 header h1 
@@ -91,5 +95,47 @@ menu ul {
 a {
   text-decoration: none;
   color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section {
+  min-height: 50vh;
+}
+
+#Inicio {
+  background-color: lightcoral;
+}
+
+#SobreMi {
+  background-color: lightcyan;
+}
+
+#Proyectos {
+  background-color: lightgreen;
+}
+
+#Contacto {
+  background-color: rgb(255, 236, 224);
+}
+
+#GoUpButton {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+  /* display: none; */
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+#GoUpButton:hover {
+  background-color: gray;
 }
 

@@ -3,6 +3,9 @@
 const btnScrollToTop = document.querySelector("#GoUpButton")
 console.log(btnScrollToTop)
 
+const btnDarkMode = document.querySelector("#darkmode-toggle");
+console.log(btnDarkMode);
+
 btnScrollToTop.addEventListener("click", e => {
     window.scrollTo({
         top:0,

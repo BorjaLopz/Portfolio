@@ -5,8 +5,7 @@
 }
 
 html {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande","Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     --principalClaro: #2c17a0;
     --backgroundClaro: #505cff;
     --shadowColour: #ff9950;
@@ -69,7 +68,7 @@ li:hover::after {
   transform-origin: bottom center;
 }
 
-#ulTwitter {
+menu ul {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -80,7 +79,7 @@ li:hover::after {
   justify-content: space-around;
 }
 
-.liTwitter {
+.animation {
   display: inline-block;
   position: relative;
   color: white;
